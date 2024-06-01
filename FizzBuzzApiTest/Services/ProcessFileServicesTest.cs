@@ -8,7 +8,7 @@ namespace FizzBuzzApiTest.Services
     {
 
         [Fact]
-        public void ProcessInput_ShouldReturn_Fizz_For_3_27_30()
+        public void ProcessInput_ShouldReturn_Fizz_For_Multiple_Of_3()
         {
             // Arrange
             string[] inputValues = { "3", "18", "27" };
@@ -35,7 +35,7 @@ namespace FizzBuzzApiTest.Services
 
         }
 
-        public void ProcessInput_ShouldReturn_Buzz_For_5_10_20()
+        public void ProcessInput_ShouldReturn_Buzz_For_Multiple_Of_5()
         {
             // Arrange
             string[] inputValues = { "5", "10", "20" };
@@ -62,7 +62,7 @@ namespace FizzBuzzApiTest.Services
 
         }
 
-        public void ProcessInput_ShouldReturn_FizzBuzz_For_15_30()
+        public void ProcessInput_ShouldReturn_FizzBuzz_For_Multiple_Of_15()
         {
             // Arrange
             string[] inputValues = { "15", "30" };
@@ -88,7 +88,7 @@ namespace FizzBuzzApiTest.Services
 
         }
 
-        public void ProcessInput_ShouldReturn_InvalidItem_For_1_23_Emptystring_A()
+        public void ProcessInput_ShouldReturn_InvalidItem_For_Non_Numbers()
         {
             // Arrange
             string[] inputValues = { "1", "23","","A"};
@@ -116,7 +116,7 @@ namespace FizzBuzzApiTest.Services
 
         }
 
-        public void ProcessInput_ShouldReturn_DividedBy_Message_For_1_5()
+        public void ProcessInput_ShouldReturn_DividedBy_Message_For_Other_Numbers()
         {
             // Arrange
             string[] inputValues = { "1", "5" };

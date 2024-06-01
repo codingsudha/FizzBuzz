@@ -2,6 +2,7 @@
 using FizzBuzzApi.Model;
 using Newtonsoft.Json;
 using FizzBuzzApi.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FizzBuzzApi.Controllers
 {
@@ -21,5 +22,13 @@ namespace FizzBuzzApi.Controllers
             var result = _processFileService.ProcessInput(inputValue);
             return Json(result);
         }
+
+        [HttpGet]
+        public async Task<ActionResult> Get()
+        {
+            return Json("Reached here!");
+        }
+
     }
 }
+
